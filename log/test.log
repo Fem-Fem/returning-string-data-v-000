@@ -1596,3 +1596,7 @@ Completed 500 Internal Server Error in 14350ms (ActiveRecord: 0.2ms)
 Started GET "/posts/1" for 127.0.0.1 at 2018-11-10 23:58:49 +0000
 Processing by PostsController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (22766.9ms)
+Completed 500 Internal Server Error in 22802ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
